@@ -42,7 +42,7 @@ describe('DeleteCustomer Use Case', () => {
         const result = await deleteCustomer.execute(validDeleteInput);
       
         expect(result.hasError).toBe(true);
-        expect(result.message).toStrictEqual(Error('Error deleting customer'));
+        expect(result.message).toStrictEqual('Failed to delete customer');
       });
 
   });
