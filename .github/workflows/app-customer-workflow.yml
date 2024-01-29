@@ -43,10 +43,10 @@ jobs:
 
       - name: Build and Push to ECR
         run: |
-          aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 839074601035.dkr.ecr.us-east-1.amazonaws.com
+          aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 905418088791.dkr.ecr.us-east-1.amazonaws.com
           docker build -t customer/production .
-          docker tag customer/production:latest 839074601035.dkr.ecr.us-east-1.amazonaws.com/customer/production:latest
-          docker push 839074601035.dkr.ecr.us-east-1.amazonaws.com/customer/production:latest
+          docker tag customer/production:latest 905418088791.dkr.ecr.us-east-1.amazonaws.com/customer/production:latest
+          docker push 905418088791.dkr.ecr.us-east-1.amazonaws.com/customer/production:latest
 
   deploy-aws:
     runs-on: ubuntu-latest
