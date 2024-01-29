@@ -44,19 +44,4 @@ it('should add a new customer', async () => {
     //expect(result.result?.[0]).toMatchObject(mockCreatedCustomer);
 });
 
-// it('should return a specific customer by ID', async () => {
-//   const mockCustomer = mockCustomers[0];
-//   const customerRepositoryOneMock: ICustomerRepository = {
-//     ...customerRepositoryMock,
-//     getCustomerById: jest.fn().mockResolvedValue([mockCustomer]),
-//   };
-    
-//   //customerRepositoryMock.getCustomerById.mockResolvedValue([{}]);
-//   const listCustomer = new ListCustomer(customerRepositoryOneMock);
-//   const result = await listCustomer.execute({ params: { id: 1 } });
-    
-//   expect(result.result?.length).toBe(1);
-//   expect(result.hasError).toBe(false);
-// });
-
 });
